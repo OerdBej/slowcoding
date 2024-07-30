@@ -1,5 +1,7 @@
 # Another Page
 
+this website is on construction. check out my first article on
+
 ```js filename="demo.js" {3} copy
 let a = 1;
 
@@ -8,7 +10,7 @@ console.log(a);
 
 ## Component
 
-import { useState } from 'react'
+import { useState } from 'react';
 
 {/* Import CSS modules */}
 import styles from '../components/counters.module.css'
@@ -17,15 +19,20 @@ export const Counter = () => {
   const [count, setCount] = useState(0);
   return (
     <div>
-      <button onClick={() => setCount(count + 1)} className={styles.counter}>Clicked {count} times</button>
+      <button
+        onClick={() => setCount(count + 1)}
+        className={styles.counter}
+      >
+        Clicked {count} times
+      </button>
     </div>
   );
 };
 
-<Counter/>
+<Counter />
 
 ## External Component
 
-import Counters from '../components/counters'
+import Counters from '../components/counters';
 
 <Counters />
